@@ -6,6 +6,7 @@
             :contact="contact"
             @contact-submit="createContact"
             />
+             <p>{{ message }}</p>
         </div>   
     </div>
 </template>
@@ -32,7 +33,7 @@ export default{
 
             }else{
                 console.log(respone.data);
-                this.message="Liên hệ được đệ trình thành công.";
+                this.message = "Liên hệ được đệ trình thành công.";
 
             }
         },
